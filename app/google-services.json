@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "149221876025",
+    "firebase_url": "https://akcfirebaseapp.firebaseio.com",
+    "project_id": "akcfirebaseapp",
+    "storage_bucket": "akcfirebaseapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149221876025:android:3009b737822f1ef0",
+        "android_client_info": {
+          "package_name": "com.truedreamz.firebaseauthenticationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149221876025-1f6k8ugloqkmekhudj9s66earfo3vjc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmwTboJb4eRB1f2PfUPEdch4ExkW5397Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
