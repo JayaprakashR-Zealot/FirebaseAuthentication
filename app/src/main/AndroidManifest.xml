@@ -25,7 +25,29 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".ForgotPasswordActivity"></activity>
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".firebase_cloud_messaging.FCMActivity"></activity>
+
+        <!-- Firebase Notifications -->
+        <service android:name=".firebase_cloud_messaging.AKCFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".firebase_cloud_messaging.AKCFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".firebase_cloud_messaging.AKCFCMReceiver">
+            <intent-filter>
+                <action android:name="com.augray.AugRayAvatar.FCMregistrationComplete"/>
+                <action android:name="com.augray.AugRayAvatar.pushNotification"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
